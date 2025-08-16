@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form div {
+            margin-bottom: 12px;
+        }
+
+        label {
+            font-weight: bold;
+            display: inline-block;
+            width: 150px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 5px;
+            width: 180px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="range"] {
+            width: 200px;
+            accent-color: #007bff;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            padding: 7px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="backend.js">
+            <div>
+                Name: <input type="text" id="name">
+            </div>
+            <div>
+                Password: <input type="text" id="Password">ssss
+            </div>
+            <div>
+                Age: <input type="number" id="Age">
+            </div>
+            <div>
+                Date of Birth:
+                <input type="number" id="date-of-birth" placeholder="dd-mm-yyyy" >
+            </div>
+
+            <div>
+                Month-of-addmision: <input type="text" id="Month-of-addmision">
+            </div>
+            <div>
+                Year-of-10-pass: <input type="text" id="Year-of-10-pass">
+            </div>
+            <div>
+                Gender: Male <input type="radio" name="Gender"> Female <input type="radio" name="Gender">
+                Other <input type="radio" name="Gender">
+            </div>
+
+            <div>
+                qualification: <input type="text" id="qualification">
+            </div>
+            <div>
+                Select-branch: <input type="text" id="Select-branch">
+            </div>
+            <div>
+                category: SC<input type="radio" name="category"> ST<input type="radio" name="category">
+                Gen<input type="radio" name="category"> OBC<input type="radio" name="category">
+            </div>
+            <div>
+                Range:
+                <input type="range" id="Range" min="0" max="100" value="50"
+                    oninput="rangeValue.textContent = this.value">
+                <span id="rangeValue">50</span>
+            </div>
+
+            <div>
+                select-branch: web-design<input type="radio" name="select-branch">
+                web-devlopmend<input type="radio" name="select-branch">
+                AI_ML<input type="radio" name="select-branch">
+            </div>
+            <div>
+                <button>submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
